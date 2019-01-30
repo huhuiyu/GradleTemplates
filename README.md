@@ -11,3 +11,4 @@
   - 执行`build.bat`脚本可以 build 项目
   - 执行`refresh-classpath.bat`脚本可以刷新项目依赖
 - [Java-基础项目模板](BaseJava/)
+- [SpringBoot+Mybatis-基础项目模板](BaseSpringbootMybatis/)
