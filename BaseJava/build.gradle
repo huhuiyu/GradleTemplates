@@ -21,7 +21,7 @@ repositories {
   //使用阿里的maven仓库（避免去国外的地址下载，可以加快下载速度）
   maven {url 'http://maven.aliyun.com/nexus/content/groups/public/'}
   //自建私有仓库
-  maven {url 'http://maven.huhuiyu.cn/repository/huhuiyu/'}
+  maven {url 'http://maven.klcxy.top/repository/huhuiyu/'}
   //使用官方maven仓库
   mavenCentral()
 }
