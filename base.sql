@@ -1,6 +1,18 @@
-/* 用户授权脚本 */
-GRANT ALL ON online_exam.* TO 'test-projects'@'%';
-FLUSH PRIVILEGES;
+/* 权限相关脚本 */
+use mysql;
+
+/* 创建用户 */
+create user 'test-projects'@'%' identified by 'Test4-sql';
+/* 删除用户 */
+drop user 'test-projects';
+/* 用户授权 */
+grant all on online_exam.* to 'test-projects'@'%';
+/* 授予全部权限 */
+grant all privileges on *.* to 'huhuiyu'@'%' with grant option; 
+/* 取消用户授权 */
+revoke all on online_exam.* to 'test-projects'@'%';
+/* 权限修改立即生效 */
+flush privileges;
 
 /* 创建数据库脚本 */
 use information_schema;
